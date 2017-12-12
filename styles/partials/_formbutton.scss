@@ -1,0 +1,45 @@
+/*Form Button*/
+.endBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20%;
+}
+
+input[type=submit]{
+    border: none;
+    padding: 8% 25%;
+    border-radius: 10px;
+    margin-top: -8px;
+}
+
+input[type=submit]:hover,
+a:hover {
+    background: white;
+    color: #c19b5d;
+}
+
+input[type=submit],
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    background: #c19b5d;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+form a {
+    padding: 2.5% 7%;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+.submit-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+

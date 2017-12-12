@@ -1,0 +1,45 @@
+/*general stylest*/
+html {
+		font-size: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+p, label {
+    font-size: 1.5rem;
+    line-height: 28px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1, h2, p, label {
+    color: #c19b5d;
+}
+
+h1, h2, h3 {
+    // font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 5% 6%;
+}
+
+h2, label{
+    text-shadow: 0px 2px 4px rgb(7, 7, 7);
+}
+
+
+body {
+    background-image: url(../images/woodhorizontal1.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 320px) {
+  body {
+    min-width: 320px; } 
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What Spy are you?</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Montserrat|Oswald" rel="stylesheet">
+</head>
+<body>
+    <header id="top" class="hero-Banner">
+        <h1>What Type of Spy are you?</h1>
+        <p class="headerText">You are about to embark on one of the most dangerous quizzes in the world... </p>
+        <a href="#start" class="start">Start!</a>
+    </header>
+
+    <div class="fail">
+        <p>You have failed this quiz! You took too long, the bad guys have won. The city has been destroyed. HQ has been infiltrated. Don't give up! You only have one option... </p>
+        <div class="retake">
+            <a class="retakeButton" href="#top"> Retake </a>
+        </div>
+    </div>
+    <Form>
+        <span class="timer"></span>
+        <fieldset class="questionOne" id="start">
+            <h2>During training you encounter an extreme life threatening situation.. what do you do?</h2>
+            <input type="radio" name="questionOne" id="questionOneMisunderstood" value="misunderstood" class = " active"><!--Misunderstood 10-->
+            <label for="questionOneMisunderstood" class="first" data-href="#qTwo">Wouldn’t understand this is training and fall into a real life threatening situation</label>
+            <input type="radio" name="questionOne" id="questionOneFunny" value="funny" class = " active"><!--Funny 45-->
+            <label for="questionOneFunny" class="first" data-href="#qTwo">You freak out but you still continue with the training... with little elegance</label>
+            <input type="radio" name="questionOne" id="questionOneClassy" value="classy" class = " active"><!--classy 45 -->
+            <label for="questionOneClassy" class="first" data-href="#qTwo">You take leadership of your team and you bring them to safety right at the last second</label>
+            <input type="radio" name="questionOne" id="questionOneCurious" value="curious" class = " active"><!--curious 25-->
+            <label for="questionOneCurious" class="first" data-href="#qTwo">You sit comfortably in the back seat and give your partner instructions on how to complete the training</label>
+            <input type="radio" name="questionOne" id="questionOneAdventure" value="adventure" class = " active"><!--adventure 50-->
+            <label for="questionOneAdventure" class="first" data-href="#qTwo">You take a sip from your martini and go solo</label>
+        </fieldset>
+
+        <fieldset class="questiontwo question" id="qTwo">
+            <h2>You’re about to embark on your mission, what does your weapon specialist equip you with?</h2>
+            <input type="radio" name="questionTwo" id="questionTwoFunny" value="funny"><!-- Funny  45-->
+            <label for="questionTwoFunny" data-href="#qThree">Pepper Spray</label>
+            <input type="radio" name="questionTwo" id="questionTwoMisunderstood" value="misunderstood"><!-- Misunderstood  10-->
+            <label for="questionTwoMisunderstood" data-href="#qThree">A Camera Gun</label>
+            <input type="radio" name="questionTwo" id="questionTwoAdventure" value="adventure"><!--  adventure 50-->
+            <label for="questionTwoAdventure" data-href="#qThree">An Aston Martin DVS V12</label>
+            <input type="radio" name="questionTwo" id="questionTwoClassy" value="classy"><!--classy 45 -->
+            <label for="questionTwoClassy" data-href="#qThree">A Brigg Umbrella</label>
+            <input type="radio" name="questionTwo" id="questionTwoCurious" value="curious"><!-- curious 25 -->
+            <label for="questionTwoCurious" data-href="#qThree">A Standard Issue Hand Gun</label>
+        </fieldset>
+
+        <fieldset class="questionThree question" id="qThree">
+            <h2>You’ve escaped to the roof top... What do you do?</h2>
+            <input type="radio" name="questionThree" id="questionThreeAdventure" value="adventure"><!--  adventure 50-->
+            <label for="questionThreeAdventure" data-href="#qFour">You strap on your parachute (which you have previously placed in the corner) and jump off the building to safety</label>
+            <input type="radio" name="questionThree" id="questionThreeCurious" value="curious"><!-- curious 25 -->
+            <label for="questionThreeCurious" data-href="#qFour">You see your partner waiting for you and you both zip line your way down</label>
+            <input type="radio" name="questionThree" id="questionThreeMisunderstood" value="misunderstood"><!--  Misunderstood 10-->
+            <label for="questionThreeMisunderstood" data-href="#qFour">Once you reach the roof top, you realize you have no back-up plan so you take the elevator down</label>
+            <input type="radio" name="questionThree" id="questionThreeFunny" value="funny"><!-- Funny 45 -->
+            <label for="questionThreeFunny" data-href="#qFour">You see the bad guys on a helicopter trying to shoot you. You run back down the stairs and fight your way through</label>
+            <input type="radio" name="questionThree" id="questionThreeClassy" value="classy"><!-- classy 45 -->
+            <label for="questionThreeClassy" data-href="#qFour">You find a sports car and you take it (conveniently the keys are there) and glide it across to the next build’s swimming pool and escape</label>
+        </fieldset>
+        <fieldset class="questionFour question" id="qFour">
+            <h2>You have been captured, what do you do?</h2>
+            <input type="radio" name="questionFour" id="questionFourCurious" value="curious"><!-- curious 25 -->
+            <label for="questionFourCurious" data-href="#qFive">You turn towards you partner and show your displeasure and argue about how you both ended up in this situation</label>
+            <input type="radio" name="questionFour" id="questionFourAdventure" value="adventure"><!-- adventure  50-->
+            <label for="questionFourAdventure" data-href="#qFive">You let the boss boast about himself</label>
+            <input type="radio" name="questionFour" id="questionFourFunny" value="funny"><!-- Funny 45 -->
+            <label for="questionFourFunny" data-href="#qFive">You just think of a way to escape but at the same time you obey that bad guy's instructions</label>
+            <input type="radio" name="questionFour" id="questionFourMisunderstood" value="misunderstood"><!--  Misunderstood 10  -->
+            <label for="questionFourMisunderstood" data-href="#qFive">Steal a wheelchair and escape</label>
+            <input type="radio" name="questionFour" id="questionFourClassy" value="classy"><!-- classy 45 -->
+            <label for="questionFourClassy" data-href="#qFive">You would take control of the situation and blast them with all the gadgets you have on</label>
+        </fieldset>
+
+        <fieldset class="questionFive question" id="qFive">
+            <h2>You caught the bad guys, what would you do to them?</h2>
+            <input type="radio" name="questionFive" id="questionFiveMisunderstood" value="misunderstood"><!-- Misunderstood 10 -->
+            <label for="questionFiveMisunderstood" data-href="#complete">The bad guys died during your epic fight scene</label>
+            <input type="radio" name="questionFive" id="questionFiveFunny" value="funny"><!-- Funny 45 -->
+            <label for="questionFiveFunny" data-href="#complete">You call for back-up</label>
+            <input type="radio" name="questionFive" id="questionFiveClassy" value="classy"><!-- classy 45 -->
+            <label for="questionFiveClassy" data-href="#complete">You don't think twice and just *kick some butts*</label>
+            <input type="radio" name="questionFive" id="questionFiveCurious" value="curious"><!--  curious 25 -->
+            <label for="questionFiveCurious" data-href="#complete">You argue with your partner to try to figure out what to do with them and the bad guys manage to escape from you</label>
+            <input type="radio" name="questionFive" id="questionFiveAdventure" value="adventure"><!--  adventure 50 -->
+            <label for="questionFiveAdventure" data-href="#complete">You realize killing them won’t change anything so you turn them into the police</label>
+        </fieldset>
+        <div class="endBtn">
+            <div class="submit-container" id="complete">
+                <input type="submit" value="Results">
+            </div>
+        </div>
+        
+    </Form>
+    <section class="results">
+    </section>
+    <section class="playAgainSection">
+            <a href="#top" class="reset">Play Again</a>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
